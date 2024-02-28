@@ -2,6 +2,9 @@ package com.andrew.infrastructure.persistent.po;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 @Data
 public class StrategyAward {
 
@@ -17,41 +20,41 @@ public class StrategyAward {
     /**
      * 抽奖奖品ID-内部轮转使用
      */
-    private Long awardId;
+    private Integer awardId;
     /**
      * 抽奖奖品标题
      */
-    private Long awardTitle;
+    private String awardTitle;
     /**
      * 抽奖奖品副标题
      */
-    private Long awardSubTitle;
+    private String awardSubTitle;
     /**
      * 奖品库存总量
      */
-    private Long awardCount;
+    private Integer awardCount;
     /**
      * 奖品剩余库存
      */
-    private Long awardCountSurplus;
+    private Integer awardCountSurplus;
     /**
      * 奖品中奖概率
      */
-    private Long awardRate;
+    private BigDecimal awardRate;
     /**
      * 规则模型，rule配置的模型同步到此表便于使用
      */
-    private Long ruleModels;
+    private String ruleModels;
     /**
      * 排序
      */
-    private Long sort;
+    private Integer sort;
     /**
      * 创建时间
      */
-    private Long createTime;
+    private Date createTime;
     /**
      * 更新时间
      */
-    private Long updateTime;
+    private Date updateTime;
 }
